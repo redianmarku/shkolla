@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Page info -->
+<div class="page-info-section set-bg" data-setbg="{% static 'webuni/img/page-bg/4.jpg' %}">
+  <div class="container">
+    <div class="site-breadcrumb">
+      <a href="/">Kryefaqe</a>
+      <span>Rreth</span>
+    </div>
+  </div>
+</div>
+<!-- Page info end -->
+
+
+<section class="about-us py-5 " id="about-us">
+    <div class="container mt-5">
+	<div class="row">
+		<div class="col-md-6">
+		    <h1 class='text-primary'>Mirsevini!</h1>
+		    <h2>Mesoni me shume rreth nesh</h2>
+		    <hr>
+		    <p>Platforma jone eshte krijuar si pasoje e mungeses se mesimdhenies pas termetit te 26 nentori per shkak se shkolla jone u demtua, por ajo eshte shume e shfrytezueshe gjate ketyre diteve te karantines per shkak te coronavirus covid19.</p>
+		    <p>Platforma jone ndihmon ne komunikimin ndermjet mesuesve dhe nxenesve dhe ben me te lehte mesimnxenjen online.</p>
+		    <button type="button" class="btn btn-primary">Merr me shume info</button>
+
+		</div>
+		<div class="col-md-6">
+		    <img src="http://themebubble.com/demo/marketingpro/wp-content/uploads/2016/10/seo-slide.png "alt="">
+		</div>
+	</div>
+</div>
+</section>
+{% endblock %}

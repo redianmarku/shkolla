@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<!-- Page info -->
+<div class="page-info-section set-bg" data-setbg="{% static 'webuni/img/page-bg/4.jpg' %}">
+  <div class="container">
+    <div class="site-breadcrumb">
+      <a href="#">Kryefaqja</a>
+      <span>Kontakt</span>
+    </div>
+  </div>
+</div>
+<!-- Page info end -->
+
+
+
+
+<!-- Page -->
+<section class="contact-page spad pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="contact-form-warp">
+          <div class="section-title text-white text-left">
+            <h2>Get in Touch</h2>
+            <p>Nese deshironi te na kontaktoni, plotesoni fushat e meposhtme dhe mund te jemi ne kontakt. </p>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Emri">
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Mesazhi"></textarea>
+            <button class="site-btn">Dergo</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="contact-info-area">
+          <div class="section-title text-left p-0">
+            <h2>Informacione kontakti</h2>
+            <p><p>
+          </div>
+          <div class="phone-number">
+            <span>Direct Line</span>
+            <h2>+355 69 2131 544</h2>
+          </div>
+          <ul class="contact-list">
+            <li>Mamurras<br>Kurbin</li>
+            <li>+355 69 2131 544</li>
+            <li><a href="mailto:mamurrasgjimnazi@yahoo.com">mamurrasgjimnazi@yahoo.com</a></li>
+          </ul>
+          <div class="social-links">
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-behance"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <img width="250" src="{% static 'webuni/img/favicon.png' %}" class="rounded-circle">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Page end -->
+
+{% endblock content %}

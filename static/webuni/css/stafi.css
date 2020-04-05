@@ -1,0 +1,81 @@
+ body {
+      background: #34495e;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    .team-section
+{
+  overflow: hidden;
+  text-align: center;
+  background: #34495e;
+  padding: 60px;
+}
+.team-section h1
+{
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  color: white;
+  font-size: 40px;
+}
+.team-section h3
+{
+  color: #eee;
+  font-size: 15px;
+}
+
+.border
+{
+  display: block;
+  margin: auto;
+  width: 160px;
+  height: 3px;
+  background: #3498db;
+  margin-bottom: 40px;
+}
+    .swiper-container {
+      width: 70%;
+      height: 250px;
+      margin: 20px auto;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 40px;
+      background: #eee;
+      border-radius: 50%;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .fa-plus
+    {
+      font-size: 40px;
+      color: #34495e;
+    }
+    .append-buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .append-buttons a {
+      display: inline-block;
+      border: 3px solid #eee;
+      color: #eee;
+      text-decoration: none;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin: 0 10px;
+      font-size: 13px;
+    }

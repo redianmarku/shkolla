@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Hey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'webuni/css/swiper.min.css'%}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webuni/css/stafi.css'%}">
+</head>
+<body>
+  <div class="team-section">
+    <h1>Stafi Yne</h1>
+    <span class="border"></span>
+   <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img class="rounded-circle" src="{% static 'webuni/img/default.png' %}"></i></div>
+      <div class="swiper-slide"><img class="rounded-circle" src="{% static 'webuni/img/default.png' %}"></i></div>
+      <div class="swiper-slide"><img class="rounded-circle" src="{% static 'webuni/img/default.png' %}"></i></div>
+      <div class="swiper-slide"><img class="rounded-circle" src="{% static 'webuni/img/default.png' %}"></i></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+<script type="text/javascript" src="{% static 'webuni/js/swiper.min.js'%}"></script>
+ <script>
+    var appendNumber = 4;
+    var prependNumber = 1;
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    document.querySelector('.prepend-2-slides').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.prependSlide([
+        '<div class="swiper-slide"><i class="fa fa-plus" aria-hidden="true"></i></div>',
+        '<div class="swiper-slide"><i class="fa fa-plus" aria-hidden="true"></i></div>'
+        ]);
+    });
+    document.querySelector('.prepend-slide').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.prependSlide('<div class="swiper-slide"><i class="fa fa-plus" aria-hidden="true"></i></div>');
+    });
+    document.querySelector('.append-slide').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.appendSlide('<div class="swiper-slide"><i class="fa fa-plus" aria-hidden="true"></i></div>');
+    });
+    document.querySelector('.append-2-slides').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.appendSlide([
+        '<div class="swiper-slide"><i class="fa fa-plus" aria-hidden="true"></i></div>',
+        '<div class="swiper-slide"><i class="fa fa-plus" aria-hidden="true"></i></div>'
+        ]);
+    });
+  </script>
+</body>
+</html>
+
+{% endblock %}
